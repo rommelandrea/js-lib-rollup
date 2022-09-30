@@ -1,2 +1,4 @@
-export { default as hello } from './hello'
-export { default as Goodbye } from './goodbye'
+import Goodbye from './goodbye/index.js'
+import Hello from './hello/index.js'
+
+export {Hello, Goodbye}

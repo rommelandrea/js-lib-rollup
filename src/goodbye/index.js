@@ -1,1 +1,3 @@
-export { default } from './Goodbye'
+import Goodbye from './Goodbye.js'
+
+export default Goodbye
