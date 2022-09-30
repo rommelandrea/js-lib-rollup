@@ -22,8 +22,8 @@
     "build": "rollup -c",
     "dev": "rollup -c -w",
     "test": "tap test/**/*.test.js",
-    "lint": "standard",
-    "lint:fix": "standard --fix"
+    "lint": "standard src/**/*.js test/**/*.js",
+    "lint:fix": "standard --fix src/**/*.js test/**/*.js"
   },
   "dependencies": {
     "axios": "^0.27.2"

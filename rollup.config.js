@@ -1,31 +1,30 @@
-import { terser } from "rollup-plugin-terser";
-import { nodeResolve } from '@rollup/plugin-node-resolve';
+import { terser } from 'rollup-plugin-terser'
+import { nodeResolve } from '@rollup/plugin-node-resolve'
 
-import pkg from './package.json';
+import pkg from './package.json'
 
-const main = ["src/index.js"];
-
+const main = ['src/index.js']
 
 export default [{
   input: main,
   plugins: [
     terser(),
-    nodeResolve(),
+    nodeResolve()
   ],
   output: [
     {
-      dir: "dist/esm",
-      format: "esm",
-      exports: "named",
-      sourcemap: true,
+      dir: 'dist/esm',
+      format: 'esm',
+      exports: 'named',
+      sourcemap: true
     },
     {
-      dir: "dist/cjs",
-      format: "cjs",
-      exports: "named",
-      sourcemap: true,
-    },
-  ],
+      dir: 'dist/cjs',
+      format: 'cjs',
+      exports: 'named',
+      sourcemap: true
+    }
+  ]
   // output: {
   //   file: `dist/${pkg.name}.min.js`,
   //   format: "umd",
@@ -34,4 +33,4 @@ export default [{
   //   exports: "named",
   //   sourcemap: true,
   // }
-}];
+}]

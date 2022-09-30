@@ -1,7 +1,7 @@
 class Goodbye {
-  sayGoodbye(name = 'pippo') {
+  sayGoodbye (name = 'pippo') {
     return `goodbye ${name}`
   }
 }
 
-export default Goodbye;
+export default Goodbye
