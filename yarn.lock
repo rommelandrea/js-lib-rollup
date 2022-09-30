@@ -569,6 +569,7 @@ __metadata:
     axios: ^0.27.2
     rollup: ^2.79.1
     rollup-plugin-terser: ^7.0.2
+    snazzy: ^9.0.0
     standard: ^17.0.0
     tap: ^16.3.0
   languageName: unknown
@@ -1273,6 +1274,18 @@ __metadata:
   version: 0.0.1
   resolution: "concat-map@npm:0.0.1"
   checksum: 902a9f5d8967a3e2faf138d5cb784b9979bad2e6db5357c5b21c568df4ebe62bcb15108af1b2253744844eb964fc023fbd9afbbbb6ddd0bcc204c6fb5b7bf3af
+  languageName: node
+  linkType: hard
+
+"concat-stream@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "concat-stream@npm:2.0.0"
+  dependencies:
+    buffer-from: ^1.0.0
+    inherits: ^2.0.3
+    readable-stream: ^3.0.2
+    typedarray: ^0.0.6
+  checksum: d7f75d48f0ecd356c1545d87e22f57b488172811b1181d96021c7c4b14ab8855f5313280263dca44bb06e5222f274d047da3e290a38841ef87b59719bde967c7
   languageName: node
   linkType: hard
 
@@ -2437,7 +2450,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"inherits@npm:2, inherits@npm:^2.0.3":
+"inherits@npm:2, inherits@npm:^2.0.3, inherits@npm:^2.0.4":
   version: 2.0.4
   resolution: "inherits@npm:2.0.4"
   checksum: 4a48a733847879d6cf6691860a6b1e3f0f4754176e4d71494c41f3475553768b10f84b5ce1d40fbd0e34e6bfbb864ee35858ad4dd2cf31e02fc4a154b724d7f1
@@ -3122,7 +3135,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"minimist@npm:^1.2.0, minimist@npm:^1.2.6":
+"minimist@npm:^1.2.0, minimist@npm:^1.2.5, minimist@npm:^1.2.6":
   version: 1.2.6
   resolution: "minimist@npm:1.2.6"
   checksum: d15428cd1e11eb14e1233bcfb88ae07ed7a147de251441d61158619dfb32c4d7e9061d09cab4825fdee18ecd6fce323228c8c47b5ba7cd20af378ca4048fb3fb
@@ -3776,7 +3789,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"readable-stream@npm:^3.6.0":
+"readable-stream@npm:^3.0.2, readable-stream@npm:^3.6.0":
   version: 3.6.0
   resolution: "readable-stream@npm:3.6.0"
   dependencies:
@@ -4135,6 +4148,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"snazzy@npm:^9.0.0":
+  version: 9.0.0
+  resolution: "snazzy@npm:9.0.0"
+  dependencies:
+    chalk: ^4.1.0
+    inherits: ^2.0.4
+    minimist: ^1.2.5
+    readable-stream: ^3.6.0
+    standard-json: ^1.1.0
+    strip-ansi: ^6.0.0
+    text-table: ^0.2.0
+  bin:
+    snazzy: bin/cmd.js
+  checksum: 4861448e2114402e3e167defee4127dfd8c77a0e5f08b61f2c35711fc5c9a89093482b5b9f9e1f043639e96277acbe9fa55e8bdf17f5c9a09de1b7f021043802
+  languageName: node
+  linkType: hard
+
 "socks-proxy-agent@npm:^7.0.0":
   version: 7.0.0
   resolution: "socks-proxy-agent@npm:7.0.0"
@@ -4221,6 +4251,17 @@ __metadata:
     pkg-conf: ^3.1.0
     xdg-basedir: ^4.0.0
   checksum: fa67fb04b757e6fe43b32ec812bded81f193598072107f36632c265b5d94a6e1ef4ebdbf96dfcd2da8cfddc180f281160bc025a9c762796e69bda4e10269cda3
+  languageName: node
+  linkType: hard
+
+"standard-json@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "standard-json@npm:1.1.0"
+  dependencies:
+    concat-stream: ^2.0.0
+  bin:
+    standard-json: ./bin.js
+  checksum: 34ff81ee932b9e41d471f16e0a7fbfd6458ae7a000e71458f1872e83c61b84e90f36b743ef1439be8c363757ef068ddd7089965cb586b138c2969cf1a9e6a4f6
   languageName: node
   linkType: hard
 
@@ -4603,6 +4644,13 @@ __metadata:
   dependencies:
     is-typedarray: ^1.0.0
   checksum: 99c11aaa8f45189fcfba6b8a4825fd684a321caa9bd7a76a27cf0c7732c174d198b99f449c52c3818107430b5f41c0ccbbfb75cb2ee3ca4a9451710986d61a60
+  languageName: node
+  linkType: hard
+
+"typedarray@npm:^0.0.6":
+  version: 0.0.6
+  resolution: "typedarray@npm:0.0.6"
+  checksum: 33b39f3d0e8463985eeaeeacc3cb2e28bc3dfaf2a5ed219628c0b629d5d7b810b0eb2165f9f607c34871d5daa92ba1dc69f49051cf7d578b4cbd26c340b9d1b1
   languageName: node
   linkType: hard
 
